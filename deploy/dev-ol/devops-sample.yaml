@@ -5,8 +5,8 @@ metadata:
     app: kubesphere
     component: ks-sample-dev
     tier: backend
-  name: ks-sample-dev
-  namespace: kubesphere-sample-dev
+  name: loan
+  namespace: bank
 spec:
   progressDeadlineSeconds: 600
   replicas: 1
@@ -37,7 +37,7 @@ spec:
             failureThreshold: 30
             periodSeconds: 5
           imagePullPolicy: Always
-          name: ks-sample
+          name: loan
           ports:
             - containerPort: 8080
               protocol: TCP
